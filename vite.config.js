@@ -10,13 +10,8 @@ export default defineConfig({
   build: {
     outDir: "build",
   },
-  plugins: [
-    // reactRefresh(),
-    // svgrPlugin({
-    //   svgrOptions: {
-    //     icon: true,
-    //   },
-    // }),
-    react()
-  ],
+  plugins: [react()],
+  build: {
+    chunkSizeWarningLimit: 6000, 
+  },
 });
