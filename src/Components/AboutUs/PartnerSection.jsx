@@ -12,13 +12,12 @@ import aboardLogo from '../AboutUs/Images/AbroadFliersLogo.png';
 import aeboLogo from '../AboutUs/Images/AebocodeLogo.png';
 import AmCareLogo from '../AboutUs/Images/AmCareLogo.jpeg';
 import farlexLogo from '../AboutUs/Images/FarlexLogo.jpg';
-import IvsLogo from '../AboutUs/Images/IvsLogo.jpg'; 
+import IvsLogo from '../AboutUs/Images/IvsLogo.jpg';
 import JDevelopersLogo from '../AboutUs/Images/JDevelopers.png';
 import eventLogo from '../AboutUs/Images/eventHolidaysLogo.png';
 import jungleWorksLogo from '../AboutUs/Images/JungleworksLogo.png';
 import RBLLogo from '../AboutUs/Images/RBLLogo.png';
 import CompanySwiper from './GlobalSwiper';
-
 
 const PartnerSection = () => {
   const companyItems = [
@@ -35,10 +34,8 @@ const PartnerSection = () => {
     { image: IvsLogo },
     { image: JDevelopersLogo },
     { image: eventLogo },
-    // { image: futureITLogo },
     { image: jungleWorksLogo },
     { image: RBLLogo },
-    //{ image: RGLogo },
   ];
 
   return (
@@ -80,7 +77,6 @@ const PartnerSection = () => {
             </Typography>
           </Grid2>
         </Grid2>
-        {/* <CompanySwiper companyItems={companyItems} /> */}
         <CompanySwiper companyItems={companyItems} />
       </Box>
     </>
