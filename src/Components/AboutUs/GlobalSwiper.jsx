@@ -15,7 +15,7 @@ const Container = styled.div`
     gap: 2em;
     animation: scroll 30s linear infinite;
     width: calc(
-      2 * ${(props) => props.companyItems.length} * 150px
+      2 * ${(props) => props.GlobalItems.length} * 150px
     ); /* Double the content for seamless loop */
   }
 
@@ -40,22 +40,22 @@ const Container = styled.div`
     }
     100% {
       transform: translateX(
-        calc(-${(props) => props.companyItems.length} * 150px)
+        calc(-${(props) => props.GlobalItems.length} * 150px)
       );
     }
   }
 `;
 
-const CompanySwiper = ({ companyItems }) => {
-  const duplicatedItems = [...companyItems, ...companyItems];
+const GlobalSwiper = ({ GlobalItems }) => {
+  const duplicatedItems = [...GlobalItems, ...GlobalItems];
 
   return (
-    <Container companyItems={companyItems}>
+    <Container GlobalItems={GlobalItems}>
       <div className='slider'>
         <div className='slide-track'>
           {duplicatedItems.map((item, index) => (
             <div className='slide' key={index}>
-              <img src={item.image} alt={`Company logo ${index}`} />
+              <img src={item.image} alt={`Global logo ${index}`} />
             </div>
           ))}
         </div>
@@ -64,4 +64,4 @@ const CompanySwiper = ({ companyItems }) => {
   );
 };
 
-export default CompanySwiper;
+export default GlobalSwiper;

@@ -18,10 +18,10 @@ import JDevelopersLogo from '../AboutUs/Images/JDevelopers.png';
 import eventLogo from '../AboutUs/Images/eventHolidaysLogo.png';
 import jungleWorksLogo from '../AboutUs/Images/JungleworksLogo.png';
 import rblLogo from '../AboutUs/Images/RBLLogo.png';
-import CompanySwiper from './GlobalSwiper';
+import GlobalSwiper from './GlobalSwiper';
 
 const PartnerSection = () => {
-  const companyItems = [
+  const GlobalItems = [
     { image: aeroPlazaLogo },
     { image: floranceLogo },
     { image: rajputLogo },
@@ -76,7 +76,7 @@ const PartnerSection = () => {
           </Typography>
         </Grid>
       </Grid>
-      <CompanySwiper companyItems={companyItems} />
+      <GlobalSwiper GlobalItems={GlobalItems} />
     </Box>
   );
 };
