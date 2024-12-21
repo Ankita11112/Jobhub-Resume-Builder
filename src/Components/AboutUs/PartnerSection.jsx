@@ -12,12 +12,12 @@ import aboardLogo from '../AboutUs/Images/AbroadFliersLogo.png';
 import aeboLogo from '../AboutUs/Images/AebocodeLogo.png';
 import amCareLogo from '../AboutUs/Images/AmCareLogo.png';
 import farlexLogo from '../AboutUs/Images/FarlexLogo.png';
-import IvsLogo from '../AboutUs/Images/IvsLogo.png';
+import ivsLogo from '../AboutUs/Images/IvsLogo.png';
 import JDevelopersLogo from '../AboutUs/Images/JDevelopers.png';
 import eventLogo from '../AboutUs/Images/eventHolidaysLogo.png';
 // import futureITLogo from '../AboutUs/Images/futureITLogo.png';
 import jungleWorksLogo from '../AboutUs/Images/JungleworksLogo.png';
-import RBLLogo from '../AboutUs/Images/RBLLogo.png';
+import rblLogo from '../AboutUs/Images/RBLLogo.png';
 import CompanySwiper from './GlobalSwiper';
 // import RGLogo from '../AboutUs/Images/RGLogo.png';
 
@@ -33,11 +33,11 @@ const PartnerSection = () => {
     { image: aeboLogo },
     { image: amCareLogo },
     { image: farlexLogo },
-    { image: IvsLogo },
+    { image: ivsLogo },
     { image: JDevelopersLogo },
     { image: eventLogo },
     { image: jungleWorksLogo },
-    { image: RBLLogo },
+    { image: rblLogo },
   ];
 
   return (
