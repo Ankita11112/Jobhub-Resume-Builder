@@ -3,21 +3,21 @@ import Grid from '@mui/material/Grid2';
 import React from 'react';
 
 import partnersBg from '../AboutUs/Images/PartnersBg.png';
-import aeroPlazaLogo from '../AboutUs/Images/aeroPlazaLogo.png';
-import aadiSoftLogo from '../AboutUs/Images/AadiSoftLogo.png';
-import rajputLogo from '../AboutUs/Images/rajputGroupLogo.png';
-import westHighLogo from '../AboutUs/Images/westHighlanderLogo.png';
-import whiteRayLogo from '../AboutUs/Images/whiteRayLogo.png';
-import aboardLogo from '../AboutUs/Images/AbroadFliersLogo.png';
-import aeboLogo from '../AboutUs/Images/AebocodeLogo.png';
-import amCareLogo from '../AboutUs/Images/AmCareLogo.png';
-import floranceLogo from '../AboutUs/Images/floranceEstateLogo.png';
-import farlexLogo from '../AboutUs/Images/FarlexLogo.png';
-import ivsLogo from '../AboutUs/Images/IvsLogo.png';
-import eventLogo from '../AboutUs/Images/eventHolidaysLogo.png';
-import jungleWorksLogo from '../AboutUs/Images/JungleworksLogo.png';
-import jdevelopersLogo from '../AboutUs/Images/jdevelopers.png';
-import rblLogo from '../AboutUs/Images/RBLLogo.png';
+import aeroPlazaLogo from '../AboutUs/Images/companies-list/aeroPlazaLogo.png';
+import aadiSoftLogo from '../AboutUs/Images/companies-list/AadiSoftLogo.png';
+import rajputLogo from '../AboutUs/Images/companies-list/rajputGroupLogo.png';
+import westHighLogo from '../AboutUs/Images/companies-list/westHighlanderLogo.png';
+import whiteRayLogo from '../AboutUs/Images/companies-list/whiteRayLogo.png';
+import aboardLogo from '../AboutUs/Images/companies-list/AbroadFliersLogo.png';
+import aeboLogo from '../AboutUs/Images/companies-list/AebocodeLogo.png';
+import amCareLogo from '../AboutUs/Images/companies-list/AmCareLogo.png';
+import floranceLogo from '../AboutUs/Images/companies-list/floranceEstateLogo.png';
+import farlexLogo from '../AboutUs/Images/companies-list/FarlexLogo.png';
+import ivsLogo from '../AboutUs/Images/companies-list/IvsLogo.png';
+import eventLogo from '../AboutUs/Images/companies-list/eventHolidaysLogo.png';
+import jungleWorksLogo from '../AboutUs/Images/companies-list/JungleworksLogo.png';
+import jdevelopersLogo from '../AboutUs/Images/companies-list/jdevelopers.png';
+import rblLogo from '../AboutUs/Images/companies-list/RBLLogo.png';
 import GlobalSwiper from './GlobalSwiper';
 
 const PartnerSection = () => {
