@@ -14,9 +14,9 @@ import aeboLogo from '../AboutUs/Images/AebocodeLogo.png';
 import amCareLogo from '../AboutUs/Images/AmCareLogo.png';
 import farlexLogo from '../AboutUs/Images/FarlexLogo.png';
 import ivsLogo from '../AboutUs/Images/IvsLogo.png';
-import JDevelopersLogo from '../AboutUs/Images/JDevelopers.png';
 import eventLogo from '../AboutUs/Images/eventHolidaysLogo.png';
 import jungleWorksLogo from '../AboutUs/Images/JungleworksLogo.png';
+import JDevelopersLogo from '../AboutUs/Images/jdevelopers.png';
 import rblLogo from '../AboutUs/Images/RBLLogo.png';
 import GlobalSwiper from './GlobalSwiper';
 
