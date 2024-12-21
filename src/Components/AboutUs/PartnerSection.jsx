@@ -5,10 +5,10 @@ import React from 'react';
 import PartnersBg from '../AboutUs/Images/PartnersBg.png';
 import aeroPlazaLogo from '../AboutUs/Images/aeroPlazaLogo.png';
 import floranceLogo from '../AboutUs/Images/floranceEstateLogo.png';
+import aadiSoftLogo from '../AboutUs/Images/AadiSoftLogo.png';
 import rajputLogo from '../AboutUs/Images/rajputGroupLogo.png';
 import westHighLogo from '../AboutUs/Images/westHighlanderLogo.png';
 import whiteRayLogo from '../AboutUs/Images/whiteRayLogo.png';
-import aadiSoftLogo from '../AboutUs/Images/AadiSoftLogo.png';
 import aboardLogo from '../AboutUs/Images/AbroadFliersLogo.png';
 import aeboLogo from '../AboutUs/Images/AebocodeLogo.png';
 import amCareLogo from '../AboutUs/Images/AmCareLogo.png';
@@ -25,13 +25,13 @@ const PartnerSection = () => {
     { image: aeroPlazaLogo },
     { image: floranceLogo },
     { image: rajputLogo },
-    { image: westHighLogo },
     { image: whiteRayLogo },
+    { image: amCareLogo },
     { image: aadiSoftLogo },
     { image: aboardLogo },
     { image: aeboLogo },
-    { image: amCareLogo },
     { image: farlexLogo },
+    { image: westHighLogo },
     { image: ivsLogo },
     { image: JDevelopersLogo },
     { image: eventLogo },
