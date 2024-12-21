@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import React from 'react';
 
-import PartnersBg from '../AboutUs/Images/PartnersBg.png';
+import partnersBg from '../AboutUs/Images/PartnersBg.png';
 import aeroPlazaLogo from '../AboutUs/Images/aeroPlazaLogo.png';
 import floranceLogo from '../AboutUs/Images/floranceEstateLogo.png';
 import aadiSoftLogo from '../AboutUs/Images/AadiSoftLogo.png';
@@ -16,7 +16,7 @@ import farlexLogo from '../AboutUs/Images/FarlexLogo.png';
 import ivsLogo from '../AboutUs/Images/IvsLogo.png';
 import eventLogo from '../AboutUs/Images/eventHolidaysLogo.png';
 import jungleWorksLogo from '../AboutUs/Images/JungleworksLogo.png';
-import JDevelopersLogo from '../AboutUs/Images/jdevelopers.png';
+import jdevelopersLogo from '../AboutUs/Images/jdevelopers.png';
 import rblLogo from '../AboutUs/Images/RBLLogo.png';
 import GlobalSwiper from './GlobalSwiper';
 
@@ -33,7 +33,7 @@ const PartnerSection = () => {
     { image: farlexLogo },
     { image: westHighLogo },
     { image: ivsLogo },
-    { image: JDevelopersLogo },
+    { image: jdevelopersLogo },
     { image: eventLogo },
     { image: jungleWorksLogo },
     { image: rblLogo },
@@ -49,7 +49,7 @@ const PartnerSection = () => {
           alignItems: 'center',
           pt: { xs: 8, md: 3 },
           pb: { xs: 5, md: 3 },
-          backgroundImage: { xs: 'none', md: `url(${PartnersBg})` },
+          backgroundImage: { xs: 'none', md: `url(${partnersBg})` },
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100%',
         }}
