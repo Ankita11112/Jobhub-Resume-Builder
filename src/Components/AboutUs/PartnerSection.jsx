@@ -15,9 +15,11 @@ import farlexLogo from '../AboutUs/Images/FarlexLogo.jpg';
 import IvsLogo from '../AboutUs/Images/IvsLogo.jpg'; 
 import JDevelopersLogo from '../AboutUs/Images/JDevelopers.png';
 import eventLogo from '../AboutUs/Images/eventHolidaysLogo.png';
+// import futureITLogo from '../AboutUs/Images/futureITLogo.png';
 import jungleWorksLogo from '../AboutUs/Images/JungleworksLogo.png';
 import RBLLogo from '../AboutUs/Images/RBLLogo.png';
 import CompanySwiper from './GlobalSwiper';
+// import RGLogo from '../AboutUs/Images/RGLogo.png';
 
 
 const PartnerSection = () => {
@@ -80,7 +82,6 @@ const PartnerSection = () => {
             </Typography>
           </Grid2>
         </Grid2>
-        {/* <CompanySwiper companyItems={companyItems} /> */}
         <CompanySwiper companyItems={companyItems} />
       </Box>
     </>
