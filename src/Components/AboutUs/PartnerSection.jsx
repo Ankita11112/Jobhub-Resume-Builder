@@ -7,7 +7,7 @@ import floranceLogo from '../AboutUs/Images/floranceEstateLogo.png';
 import rajputLogo from '../AboutUs/Images/rajputGroupLogo.png';
 import westHighLogo from '../AboutUs/Images/westHighlanderLogo.png';
 import whiteRayLogo from '../AboutUs/Images/whiterayLogo.png';
-import aadiSoftLogo from '../AboutUs/Images/AadiSoftLogo.png';
+import aadiSoftLogo from '../AboutUs/Images/AadiSoftLogo1.png';
 import aboardLogo from '../AboutUs/Images/AbroadFliersLogo.png';
 import aeboLogo from '../AboutUs/Images/AebocodeLogo.png';
 import AmCareLogo from '../AboutUs/Images/AmCareLogo.png';
