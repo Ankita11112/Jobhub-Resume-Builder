@@ -1,107 +1,67 @@
-import { Box, Card, Typography } from '@mui/material';
-import Grid2 from '@mui/material/Grid2';
 import React from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import './GlobalSwiper.css';
+import styled from 'styled-components';
 
-const GlobalSwiper = ({ content, sx, addImg, Box: showBox, alt }) => {
+const Container = styled.div`
+  .slider {
+    margin-top: 70px;
+    padding: 2em 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Full width container */
+  }
 
-    return (
-        <Grid2 container sx={{ height: "auto" }}>
-            <Grid2 item className="swiper-container" xs={12}>
-                <Swiper
-                    spaceBetween={10}
-                    slidesPerView={4}
-                    autoplay={{
-                        delay: 2000,
-                        disableOnInteraction: false,
-                    }}
-                    speed={1000}
-                    loop={true}
-                    navigation={{
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    }}
-                    pagination={{
-                        clickable: true,
-                        el: '.swiper-pagination', // Targeting the custom pagination Box below
-                    }}
-                    modules={[Autoplay, Navigation, Pagination]}
-                    breakpoints={{
-                        320: {
-                            slidesPerView: 1,
-                            spaceBetween: 20,
-                        },
-                        480: {
-                            slidesPerView: 2,
-                            spaceBetween: 30,
-                        },
-                        640: {
-                            slidesPerView: 2,
-                            spaceBetween: 30,
-                        },
-                        1200: {
-                            slidesPerView: 4,
-                            spaceBetween: 40,
-                        },
-                    }}
-                    style={{
-                        margin: "4%",
-                    }}
-                >
-                    {content.map((item, index) => (
-                        <SwiperSlide key={index}>
-                            <Card sx={sx}>
-                                {addImg && (
-                                    <Box
-                                        component="img"
-                                        src={item.image}
-                                        alt="swiper-slide-main"
-                                        sx={{ width: "100%", height: "100%" }}
-                                    />
-                                )}
-                                {showBox && (<>
-                                    <Box sx={{
-                                        display: "flex",
-                                        justifyContent: "center",
-                                        alignItems: "center",
-                                        flexDirection: "column",
-                                        py: 5
-                                    }}>
-                                        <Box
-                                            component="img"
-                                            src={item.imagee}
-                                            alt={item.alt}
-                                            sx={{
-                                                height: "60px",
-                                                width: "80px",
-                                            }}
-                                        />
-                                        <Typography variant="body2" component="h6" sx={{
-                                            pt: 2,
-                                            alignItems: "center",
-                                            fontSize: { xs: "15px", md: "17px" }
-                                        }} >
-                                            {item.title}
-                                        </Typography>
-                                    </Box>
-                                </>)}
-                            </Card>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+  .slide-track {
+    display: flex;
+    gap: 2em;
+    animation: scroll 30s linear infinite;
+    width: calc(
+      2 * ${(props) => props.companyItems.length} * 150px
+    ); /* Double the content for seamless loop */
+  }
 
-                {/* Custom Pagination and Navigation Buttons */}
-                <Box className="swiper-pagination" sx={{ margin: 2, display: {xs: "none", md: "block"} }}></Box>
-                <Box className="swiper-button-prev"></Box>
-                <Box className="swiper-button-next"></Box>
-            </Grid2>
-        </Grid2>
-    );
+  .slide {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(
+        calc(-${(props) => props.companyItems.length} * 150px)
+      );
+    }
+  }
+`;
+
+const CompanySwiper = ({ companyItems }) => {
+  const duplicatedItems = [...companyItems, ...companyItems];
+
+  return (
+    <Container companyItems={companyItems}>
+      <div className='slider'>
+        <div className='slide-track'>
+          {duplicatedItems.map((item, index) => (
+            <div className='slide' key={index}>
+              <img src={item.image} alt={`Company logo ${index}`} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </Container>
+  );
 };
 
-export default GlobalSwiper;
+export default CompanySwiper;
