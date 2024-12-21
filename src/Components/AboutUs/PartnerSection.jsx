@@ -4,7 +4,6 @@ import React from 'react';
 
 import partnersBg from '../AboutUs/Images/PartnersBg.png';
 import aeroPlazaLogo from '../AboutUs/Images/aeroPlazaLogo.png';
-import floranceLogo from '../AboutUs/Images/floranceEstateLogo.png';
 import aadiSoftLogo from '../AboutUs/Images/AadiSoftLogo.png';
 import rajputLogo from '../AboutUs/Images/rajputGroupLogo.png';
 import westHighLogo from '../AboutUs/Images/westHighlanderLogo.png';
@@ -12,6 +11,7 @@ import whiteRayLogo from '../AboutUs/Images/whiteRayLogo.png';
 import aboardLogo from '../AboutUs/Images/AbroadFliersLogo.png';
 import aeboLogo from '../AboutUs/Images/AebocodeLogo.png';
 import amCareLogo from '../AboutUs/Images/AmCareLogo.png';
+import floranceLogo from '../AboutUs/Images/floranceEstateLogo.png';
 import farlexLogo from '../AboutUs/Images/FarlexLogo.png';
 import ivsLogo from '../AboutUs/Images/IvsLogo.png';
 import eventLogo from '../AboutUs/Images/eventHolidaysLogo.png';
