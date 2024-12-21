@@ -17,17 +17,17 @@ const Footer = () => {
         container
         spacing={4}
         sx={{
-          flexDirection: { xs: 'column', sm: 'row' }, // Stack columns in mobile view
+          flexDirection: { xs: 'column', sm: 'row' }, // Stack columns in mobile view, row in larger views
+          justifyContent: 'space-between',
         }}
       >
-        {/* Column 1 */}
+        {/* Left Side - About Us */}
         <Grid
           item
           xs={12}
           sm={6}
-          md={4}
           sx={{
-            textAlign: { xs: 'center', sm: 'left' }, // Center align content in mobile view
+            textAlign: { xs: 'center', sm: 'left' },
           }}
         >
           <Typography variant='h6' gutterBottom>
@@ -35,55 +35,70 @@ const Footer = () => {
           </Typography>
           <Typography variant='body2' sx={{ mt: 1 }}>
             A resume builder is an easy-to-use software that helps to design
-            professional resumes with simple templates, <br /> formatting options, and
-            clear instructions for adding skills, experiences, and achievements.
+            professional resumes with simple templates, <br /> formatting
+            options, and clear instructions for adding skills, experiences, and
+            achievements.
           </Typography>
         </Grid>
 
-        {/* Column 2 */}
+        {/* Right Side - Quick Links and Contact Us */}
         <Grid
           item
           xs={12}
           sm={6}
-          md={4}
           sx={{
-            textAlign: { xs: 'center', sm: 'left' }, // Center align links in mobile view
+            display: 'flex',
+            flexDirection: { xs: 'column', sm: 'row' }, // Column in mobile view, row in larger views
+            gap: 4,
+            alignItems: { xs: 'center', sm: 'flex-start' },
+            justifyContent: 'space-around',
           }}
         >
-          <Typography variant='h6' gutterBottom>
-            Quick Links
-          </Typography>
-          <Box sx={{ mt: 1 }}>
-            <Link href='./detailsfillingpage' underline='hover' color='inherit'>
-              Resume Template
-            </Link>
-            <br />
-            <Link href='./myresume' underline='hover' color='inherit'>
-              My Resume
-            </Link>
-            <br />
-            <Link href='./about' underline='hover' color='inherit'>
-              About Us
-            </Link>
+          {/* Quick Links */}
+          <Box
+            sx={{
+              width: { xs: '100%', sm: 'auto' },
+              textAlign: { xs: 'center', sm: 'left', md: 'left' },
+            }}
+          >
+            <Typography variant='h6' gutterBottom>
+              Quick Links
+            </Typography>
+            <Box sx={{ mt: 1, textAlign: { xs: 'center', sm: 'left' } }}>
+              <Link
+                href='./detailsfillingpage'
+                underline='hover'
+                color='inherit'
+              >
+                Resume Template
+              </Link>
+              <br />
+              <Link href='./myresume' underline='hover' color='inherit'>
+                My Resume
+              </Link>
+              <br />
+              <Link href='./about' underline='hover' color='inherit'>
+                About Us
+              </Link>
+            </Box>
           </Box>
-        </Grid>
 
-        {/* Column 3 */}
-        <Grid
-          item
-          xs={12}
-          sm={6}
-          md={4}
-          sx={{
-            textAlign: { xs: 'center', sm: 'left' }, // Center align contact details in mobile view
-          }}
-        >
-          <Typography variant='h6' gutterBottom>
-            Contact Us
-          </Typography>
-          <Box sx={{ mt: 1 }}>
-            <Typography variant='body2'>Email: support@jobhub.world</Typography>
-            <Typography variant='body2'>Phone: +91 9518035030</Typography>
+          {/* Contact Us */}
+          <Box
+            sx={{
+              width: { xs: '100%', sm: 'auto' },
+              textAlign: { xs: 'center', sm: 'left', md: 'left' },
+            }}
+          >
+            <Typography variant='h6' gutterBottom>
+              Contact Us
+            </Typography>
+            <Box sx={{ mt: 1, textAlign: { xs: 'center', sm: 'left' } }}>
+              <Typography variant='body2'>
+                Email: support@jobhub.world
+              </Typography>
+              <Typography variant='body2'>Phone: +91 9518035030</Typography>
+            </Box>
           </Box>
         </Grid>
       </Grid>
