@@ -2,7 +2,7 @@ import { Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 import React from 'react';
 
-import partnersBg from '../AboutUs/Images/PartnersBg.png';
+import partnersBg from '../AboutUs/Images/companies-list/PartnersBg.png';
 import aeroPlazaLogo from '../AboutUs/Images/companies-list/aeroPlazaLogo.png';
 import aadiSoftLogo from '../AboutUs/Images/companies-list/AadiSoftLogo.png';
 import rajputLogo from '../AboutUs/Images/companies-list/rajputGroupLogo.png';
