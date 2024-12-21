@@ -2,44 +2,44 @@ import { Box, Grid2, Typography } from '@mui/material';
 import React from 'react';
 
 import PartnersBg from '../AboutUs/Images/PartnersBg.png';
-// import aeroPlazaLogo from '../AboutUs/Images/aeroPlazaLogo.png';
-// import floranceLogo from '../AboutUs/Images/floranceEstateLogo.png';
-// import rajputLogo from '../AboutUs/Images/rajputGroupLogo.png';
-// import westHighLogo from '../AboutUs/Images/westHighlanderLogo.png';
-// import whiteRayLogo from '../AboutUs/Images/whiterayLogo.png';
-// import aadiSoftLogo from '../AboutUs/Images/AadiSoftLogo1.png';
-// import aboardLogo from '../AboutUs/Images/AbroadFliersLogo.png';
-// import aeboLogo from '../AboutUs/Images/AebocodeLogo.png';
-// import AmCareLogo from '../AboutUs/Images/AmCareLogo.png';
-// import farlexLogo from '../AboutUs/Images/FarlexLogo.png';
-// import IvsLogo from '../AboutUs/Images/IvsLogo.png';
-// import JDevelopersLogo from '../AboutUs/Images/JDevelopers.png';
-// import eventLogo from '../AboutUs/Images/eventHolidaysLogo.png';
+import aeroPlazaLogo from '../AboutUs/Images/aeroPlazaLogo.png';
+import floranceLogo from '../AboutUs/Images/floranceEstateLogo.png';
+import rajputLogo from '../AboutUs/Images/rajputGroupLogo.png';
+import westHighLogo from '../AboutUs/Images/westHighlanderLogo.png';
+import whiteRayLogo from '../AboutUs/Images/whiterayLogo.png';
+import aadiSoftLogo from '../AboutUs/Images/AadiSoftLogo1.png';
+import aboardLogo from '../AboutUs/Images/AbroadFliersLogo.png';
+import aeboLogo from '../AboutUs/Images/AebocodeLogo.png';
+import AmCareLogo from '../AboutUs/Images/AmCareLogo.png';
+import farlexLogo from '../AboutUs/Images/FarlexLogo.png';
+import IvsLogo from '../AboutUs/Images/IvsLogo.png';
+import JDevelopersLogo from '../AboutUs/Images/JDevelopers.png';
+import eventLogo from '../AboutUs/Images/eventHolidaysLogo.png';
 // import futureITLogo from '../../assets/Images/companies-list/FutureITLogo.png';
-// import jungleWorksLogo from '../AboutUs/Images/JungleworksLogo.png';
-// import RBLLogo from '../AboutUs/Images/RBLLogo.png';
+import jungleWorksLogo from '../AboutUs/Images/JungleworksLogo.png';
+import RBLLogo from '../AboutUs/Images/RBLLogo.png';
 import CompanySwiper from './CompanySwiper';
 // import RGLogo from '../../assets/Images/companies-list/RGGroupsLogo.png';
 
 const PartnerSection = () => {
   const companyItems = [
-    // { image: aeroPlazaLogo },
-    // { image: floranceLogo },
-    // { image: rajputLogo },
-    // { image: westHighLogo },
-    // { image: whiteRayLogo },
-    // { image: aadiSoftLogo },
-    // { image: aboardLogo },
-    // { image: aeboLogo },
-    // { image: AmCareLogo },
-    // { image: farlexLogo },
-    // { image: IvsLogo },
-    // { image: JDevelopersLogo },
-    // { image: eventLogo },
-    // // { image: futureITLogo },
-    // { image: jungleWorksLogo },
-    // { image: RBLLogo },
-    // //{ image: RGLogo },
+    { image: aeroPlazaLogo },
+    { image: floranceLogo },
+    { image: rajputLogo },
+    { image: westHighLogo },
+    { image: whiteRayLogo },
+    { image: aadiSoftLogo },
+    { image: aboardLogo },
+    { image: aeboLogo },
+    { image: AmCareLogo },
+    { image: farlexLogo },
+    { image: IvsLogo },
+    { image: JDevelopersLogo },
+    { image: eventLogo },
+    // { image: futureITLogo },
+    { image: jungleWorksLogo },
+    { image: RBLLogo },
+    //{ image: RGLogo },
   ];
 
   return (
