@@ -10,7 +10,7 @@ import whiteRayLogo from '../AboutUs/Images/whiteRayLogo.png';
 import aadiSoftLogo from '../AboutUs/Images/AadiSoftLogo.jpg';
 import aboardLogo from '../AboutUs/Images/AbroadFliersLogo.png';
 import aeboLogo from '../AboutUs/Images/AebocodeLogo.png';
-import AmCareLogo from '../AboutUs/Images/AmCareLogo.jpeg';
+import amCareLogo from '../AboutUs/Images/AmCareLogo.jpeg';
 import farlexLogo from '../AboutUs/Images/FarlexLogo.jpg';
 import IvsLogo from '../AboutUs/Images/IvsLogo.jpg';
 import JDevelopersLogo from '../AboutUs/Images/JDevelopers.png';
@@ -31,7 +31,7 @@ const PartnerSection = () => {
     { image: aadiSoftLogo },
     { image: aboardLogo },
     { image: aeboLogo },
-    { image: AmCareLogo },
+    { image: amCareLogo },
     { image: farlexLogo },
     { image: IvsLogo },
     { image: JDevelopersLogo },
