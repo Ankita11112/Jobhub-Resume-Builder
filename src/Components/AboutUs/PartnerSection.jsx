@@ -1,4 +1,4 @@
-import { Box, Grid2, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
 
 import PartnersBg from '../AboutUs/Images/PartnersBg.png';
@@ -15,11 +15,9 @@ import farlexLogo from '../AboutUs/Images/FarlexLogo.png';
 import ivsLogo from '../AboutUs/Images/IvsLogo.png';
 import JDevelopersLogo from '../AboutUs/Images/JDevelopers.png';
 import eventLogo from '../AboutUs/Images/eventHolidaysLogo.png';
-// import futureITLogo from '../AboutUs/Images/futureITLogo.png';
 import jungleWorksLogo from '../AboutUs/Images/JungleworksLogo.png';
 import rblLogo from '../AboutUs/Images/RBLLogo.png';
 import CompanySwiper from './GlobalSwiper';
-// import RGLogo from '../AboutUs/Images/RGLogo.png';
 
 const PartnerSection = () => {
   const companyItems = [
@@ -41,47 +39,44 @@ const PartnerSection = () => {
   ];
 
   return (
-    <>
-      <Box sx={{ width: '100%', mx: 'auto' }}>
-        <Grid2
-          container
-          xs={12}
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            pt: { xs: 8, md: 3 },
-            pb: { xs: 5, md: 3 },
-            backgroundImage: { xs: 'none', md: `url(${PartnersBg})` },
-            backgroundRepeat: 'no-repeat',
-            backgroundSize: '100%',
-          }}
-        >
-          <Grid2 item xs={12}>
-            <Typography
-              data-aos='fade-up'
-              variant='h3'
-              component='h2'
-              sx={{
-                textAlign: 'center',
-                pt: { xs: 0, md: 8 },
-                fontSize: { xs: '35px', md: '45px' },
+    <Box sx={{ width: '100%', mx: 'auto' }}>
+      <Grid
+        container
+        sx={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          pt: { xs: 8, md: 3 },
+          pb: { xs: 5, md: 3 },
+          backgroundImage: { xs: 'none', md: `url(${PartnersBg})` },
+          backgroundRepeat: 'no-repeat',
+          backgroundSize: '100%',
+        }}
+      >
+        <Grid item xs={12}>
+          <Typography
+            data-aos='fade-up'
+            variant='h3'
+            component='h2'
+            sx={{
+              textAlign: 'center',
+              pt: { xs: 0, md: 8 },
+              fontSize: { xs: '35px', md: '45px' },
+            }}
+          >
+            Our{' '}
+            <span
+              style={{
+                color: 'green',
               }}
             >
-              Our{' '}
-              <span
-                style={{
-                  color: 'green',
-                }}
-              >
-                Partners
-              </span>
-            </Typography>
-          </Grid2>
-        </Grid2>
-        <CompanySwiper companyItems={companyItems} />
-      </Box>
-    </>
+              Partners
+            </span>
+          </Typography>
+        </Grid>
+      </Grid>
+      <CompanySwiper companyItems={companyItems} />
+    </Box>
   );
 };
 
