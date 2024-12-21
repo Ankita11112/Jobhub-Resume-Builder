@@ -23,10 +23,10 @@ import CompanySwiper from './CompanySwiper';
 
 const PartnerSection = () => {
   const companyItems = [
-    { image: aeroPlazaLogo },
-    { image: floranceLogo },
-    { image: rajputLogo },
-    { image: westHighLogo },
+    // { image: aeroPlazaLogo },
+    // { image: floranceLogo },
+    // { image: rajputLogo },
+    // { image: westHighLogo },
     // { image: whiteRayLogo },
     // { image: aadiSoftLogo },
     // { image: aboardLogo },
