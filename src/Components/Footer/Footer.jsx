@@ -1,6 +1,7 @@
 import React from 'react';
-import { Box, Typography, Link } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Grid from '@mui/material/Grid2';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
         container
         spacing={4}
         sx={{
-          flexDirection: { xs: 'column', sm: 'row' }, // Stack columns in mobile view, row in larger views
+          flexDirection: { xs: 'column', sm: 'row' },
           justifyContent: 'space-between',
         }}
       >
@@ -48,7 +49,7 @@ const Footer = () => {
           sm={6}
           sx={{
             display: 'flex',
-            flexDirection: { xs: 'column', sm: 'row' }, // Column in mobile view, row in larger views
+            flexDirection: { xs: 'column', sm: 'row' },
             gap: 4,
             alignItems: { xs: 'center', sm: 'flex-start' },
             justifyContent: 'space-around',
@@ -65,19 +66,21 @@ const Footer = () => {
               Quick Links
             </Typography>
             <Box sx={{ mt: 1, textAlign: { xs: 'center', sm: 'left' } }}>
-              <Link
-                href='./detailsfillingpage'
-                underline='hover'
-                color='inherit'
-              >
+              <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>
                 Resume Template
               </Link>
               <br />
-              <Link href='./myresume' underline='hover' color='inherit'>
+              <Link
+                to='/myresume'
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
                 My Resume
               </Link>
               <br />
-              <Link href='./about' underline='hover' color='inherit'>
+              <Link
+                to='/about'
+                style={{ textDecoration: 'none', color: 'inherit' }}
+              >
                 About Us
               </Link>
             </Box>
