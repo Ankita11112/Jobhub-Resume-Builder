@@ -39,7 +39,6 @@ const PartnerSection = () => {
     { image: JDevelopersLogo },
     { image: eventLogo },
     { image: futureITLogo },
-    // { image: jungleWorksLogo },
     { image: RBLLogo },
     { image: RGLogo },
   ];
