@@ -5,13 +5,21 @@ import shortid from 'shortid';
 function Template3() {
     const dataStore = useSelector(state => state.dataStore)
   return (
-    <div className='w-100' style={{border:"1px solid #4b6982",backgroundColor:"#f7eebb"}}>
+    <div className='w-100' style={{backgroundColor:"#f7eebb"}}>
         <div className='row m-0'>
             <div className='col col-3 d-flex align-items-center pt-5' style={{backgroundColor:"#583131", flexDirection:"column"}}>
-                <div className=" media me-5" >
-                    <img className="rounded align-self-center  " src={ dataStore.imageFile} alt='profile-pic'
-                        style={{maxHeight:'180px',minHeight:"100px", width:'100px', background:'grey',padding:0}}/>
-                </div>
+            {dataStore.imageFile ? (
+                        <div className="col-2 text-center media">
+                            <img
+                                className="rounded align-self-center mx-auto"
+                                src={dataStore.imageFile}
+                                alt='profile-pic'
+                                style={{ maxHeight: '180px', minHeight: "120px", width: '100px', background: 'grey', padding: 0 }}
+                            />
+                        </div>
+                    ) : (
+                        <div className="col-2" style={{ visibility: 'hidden', display: 'none' }} /> // Use visibility to maintain layout
+                    )}
                 <div className=" mt-3 font-weight-bold " style={{fontFamily:"Serif",}}>
                     <div className='' style={{color:"white",fontSize:"30px"}}>{ dataStore.personalInfo.firstName +" "+  dataStore.personalInfo.lastName}</div>
                     <h5 className='pt-2 'style={{color:"#adccc7", fontSize:"20px"}}>{dataStore.workEx[dataStore.workEx.length -1].title}</h5>
