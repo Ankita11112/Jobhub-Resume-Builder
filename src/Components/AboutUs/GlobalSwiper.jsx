@@ -28,7 +28,7 @@ const GlobalSwiper = ({ content, sx, addImg, Box: showBox, alt }) => {
                     }}
                     pagination={{
                         clickable: true,
-                        el: '.swiper-pagination', // Targeting the custom pagination Box below
+                        el: '.swiper-pagination', 
                     }}
                     modules={[Autoplay, Navigation, Pagination]}
                     breakpoints={{
