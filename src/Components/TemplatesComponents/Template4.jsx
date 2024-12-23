@@ -4,17 +4,28 @@ import shortid from 'shortid';
 
 function Template4() {
     const dataStore = useSelector(state => state.dataStore)
+    const personalInfo = useSelector(state => state.dataStore.personalInfo);
   return (
-    <div className=''>
+    <div className='' style={{backgroundColor:"white"}}>
         <div className='row m-0'>
             <div className='col col-3 d-flex align-items-center pt-5' style={{backgroundColor:"#4b6982", flexDirection:"column"}}>
                 <div className=" media me-5" >
-                    <img className="rounded align-self-center  " src={ dataStore.imageFile} alt='profile-pic'
-                        style={{maxHeight:'180px',minHeight:"100px", width:'100px', background:'grey',padding:0}}/>
+                {dataStore.imageFile ? (
+                        <div className="col-2 text-center media">
+                            <img
+                                className="rounded align-self-center mx-auto"
+                                src={dataStore.imageFile}
+                                alt='profile-pic'
+                                style={{ maxHeight: '180px', minHeight: "120px", width: '100px', background: 'grey', padding: 0 }}
+                            />
+                        </div>
+                    ) : (
+                        <div className="col-2" style={{ visibility: 'hidden', display: 'none' }} /> // Use visibility to maintain layout
+                    )}
                 </div>
                 <div className=" mt-3 font-weight-bold " style={{fontFamily:"Serif",}}>
-                    <div className='' style={{color:"white",fontSize:"30px"}}>{ dataStore.personalInfo.firstName +" "+  dataStore.personalInfo.lastName}</div>
-                    <h5 className='pt-2 'style={{color:"#adccc7", fontSize:"20px"}}>{dataStore.workEx[dataStore.workEx.length -1].title}</h5>
+                    <div className='' style={{color:"white",fontSize:"45px"}}>{ dataStore.personalInfo.firstName +" "+  dataStore.personalInfo.lastName}</div>
+                    <h5  className='d-flex ' style={{fontSize:"25px", color:"grey", fontWeight:"bold" }}>{personalInfo.jobTitle}</h5>
                 </div>
                 <div className=" ">
                     <div className='p-5 ms-4' style={{fontSize:"18px",display:"inline-block"}}>
@@ -24,7 +35,7 @@ function Template4() {
                         <div style={{color:'#f7f7f7'}}>{dataStore.personalInfo.Mobile}</div>
                         <div className="px-2 mb-2 mt-2 " style={{backgroundColor:'white', color:"black"}}>Address:</div>
                         <div style={{color:'#f7f7f7'}}>{dataStore.personalInfo.Address1 +", "+ dataStore.personalInfo.Address2
-                                +",  "+dataStore.personalInfo.City+", "+ dataStore.personalInfo.State +", "+ dataStore.personalInfo.Pin}
+                                +dataStore.personalInfo.City+", "+ dataStore.personalInfo.State +", "+ dataStore.personalInfo.Pin}
                         </div>
                     </div>
                 </div>

@@ -6,6 +6,7 @@ export const dataStoreSlice = createSlice({
         personalInfo:{
                 firstName:"",
                 lastName:"",
+                jobTitle:"",
                 Email:"",
                 Mobile:"",
                 Address1:"",
