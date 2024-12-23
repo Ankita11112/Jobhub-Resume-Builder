@@ -5,7 +5,7 @@ import shortid from 'shortid';
 function Template4() {
     const dataStore = useSelector(state => state.dataStore)
   return (
-    <div className='w-100' style={{border:"1px solid #4b6982"}}>
+    <div className=''>
         <div className='row m-0'>
             <div className='col col-3 d-flex align-items-center pt-5' style={{backgroundColor:"#4b6982", flexDirection:"column"}}>
                 <div className=" media me-5" >

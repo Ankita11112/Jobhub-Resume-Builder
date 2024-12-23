@@ -6,6 +6,7 @@ import Template1 from '../TemplatesComponents/Template1'
 import Template2 from '../TemplatesComponents/Template2'
 import Template3 from '../TemplatesComponents/Template3'
 import Template4 from '../TemplatesComponents/Template4'
+// import Template5 from '../TemplatesComponents/Template5'
 import html2canvas from 'html2canvas'
 import SuccessMessage from './Modal'
 
@@ -44,9 +45,9 @@ function MyResume() {
       }
     
     return (
-        <div className='container w-100 overflow-scroll'>
+        <div className='container w-100  '>
         <div  className=' row mt-2 p-5'>
-            <div className='w-100 d-flex justify-content-center'>
+            <div className='w-100 justify-content-center' style={{display:'flex'}}>
                 <Link to="/detailsfillingpage/keyskills">
                     <button className='btn btn-primary me-4 p-2'> Go-Back</button>
                 </Link>
@@ -55,10 +56,10 @@ function MyResume() {
                 </button>
             </div>
         </div>
-        <div  className='  mt-2 p-5 w-100 ' style={{ minWidth:"1200px", overflow:'scroll'}}>
+        <div  className='  mt-2 p-5 w-100 '>
             <div className=' w-100  d-flex justify-content-center '>
                 <div className='w-100 ' >
-                    <div id='divToPrint' className='w-100'>
+                    <div id='divToPrint' className='w-100' style={{ height: "auto", display: "flex"}}>
                         {/* In this div, user selected template is rendered alongwith the details filled by the user. */}
                         {selectedTemplate===""
                         ?<div><h1>Please select a template!</h1></div>
@@ -68,7 +69,12 @@ function MyResume() {
                         ?<Template2  />
                         :selectedTemplate === "Template 3"
                         ?<Template3  />
-                        :<Template4  />}
+                        :selectedTemplate === "Template 4"
+                        ?<Template4  />
+                        :selectedTemplate === "Template 5"
+                        ?<Template5  />
+                        :<Template6  />
+                        }
                     </div>
                 </div>
 

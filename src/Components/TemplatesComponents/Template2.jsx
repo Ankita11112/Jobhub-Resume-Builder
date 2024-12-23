@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { useSelector } from 'react-redux'
 import shortid from 'shortid';
@@ -5,18 +6,27 @@ import shortid from 'shortid';
 function Template2() {
     const dataStore = useSelector(state => state.dataStore)
   return (
-    <div className="w-100 " style={{border:"5px solid #f0bebe", backgroundColor:"#fffeec"}}>
+    <div className="" style={{backgroundColor:"#fffeec"}}>
         <div >
-            <div className="row m-0 d-flex align-items-center" style={{height:"200px",backgroundColor:"#f0bebe"}}>
-                <div className="col-2 text-center media" >
-                    <img className="rounded align-self-center mx-auto " src={ dataStore.imageFile} alt='profile-pic'
-                         style={{maxHeight:'180px',minHeight:"120px", width:'100px', background:'grey',padding:0}}/>
-                   
-                </div>
-                <div className="col-6 font-weight-bold " style={{fontFamily:"Serif"}}>
-                    <div className=' d-flex justify-content-center'  style={{color:"white",fontSize:"55px"}}>{ dataStore.personalInfo.firstName +" "+  dataStore.personalInfo.lastName}</div>
-                    <h5 className=' d-flex justify-content-center'>{dataStore.workEx[dataStore.workEx.length -1].title}</h5>
-                </div>
+        <div className="d-flex m-0  justify-content-between align-content-center ">
+                    {dataStore.imageFile ? (
+                        <div className="col-2 text-center media">
+                            <img
+                                className="rounded align-self-center mx-auto"
+                                src={dataStore.imageFile}
+                                alt='profile-pic'
+                                style={{ maxHeight: '180px', minHeight: "120px", width: '100px', background: 'grey', padding: 0 }}
+                            />
+                        </div>
+                    ) : (
+                        <div className="col-2" style={{ visibility: 'hidden', display: 'none' }} /> // Use visibility to maintain layout
+                    )}
+                    <div className={dataStore.imageFile ? "col-6 text-left font-weight-bold" : " text-left font-weight-bold"} style={{ fontFamily: "Serif" }}>
+                        <div className='' style={{ color: "#00adb5", fontSize: "55px" }}>
+                            {dataStore.personalInfo.firstName + " " + dataStore.personalInfo.lastName}
+                        </div>
+                        <h5 className='d-flex justify-content-center'>{dataStore.workEx[dataStore.workEx.length - 1].title}</h5>
+                    </div>
                 <div className="col-4  ">
                     <div className=' p-3' style={{fontSize:"18px",float:"left",display:"inline-block"}}>
                         <div >{dataStore.personalInfo.Email}</div>
