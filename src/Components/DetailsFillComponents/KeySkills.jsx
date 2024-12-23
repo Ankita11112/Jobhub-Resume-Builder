@@ -31,8 +31,8 @@ function KeySkills(props) {
     
         {skillHeads.map((item,index)=>{
             return(
-                <div key={index} className='col-lg-5 col-md-6 col-12 mt-5'>
-                    <TextField  type="text" value={item.skillName}
+                <div key={index} className='col-lg-5 col-md-6 col-12 mt-5' >
+                    <TextField  type="text" value={item.skillName} 
                       onChange={(value)=>{
                         // this onChange will be called by TextField component as props.onChange when the user gives input to the targeted field and the user given input will be send as value  .
                        
