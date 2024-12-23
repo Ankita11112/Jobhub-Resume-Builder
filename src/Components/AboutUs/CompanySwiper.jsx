@@ -65,3 +65,4 @@ const CompanySwiper = ({ companyItems }) => {
 };
 
 export default CompanySwiper;
+    
