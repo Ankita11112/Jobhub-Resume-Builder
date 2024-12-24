@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -10,25 +9,9 @@ import Template4 from '../TemplatesComponents/Template4';
 import Template5 from '../TemplatesComponents/Template5';
 import Template6 from '../TemplatesComponents/Template6';
 import Template7 from '../TemplatesComponents/Template7';
-import Template8 from '../TemplatesComponents/Template8';
+import Template9 from '../TemplatesComponents/Template9';
 import html2canvas from 'html2canvas';
 import SuccessMessage from './Modal';
-
-import React, { useState, useEffect } from 'react'
-import { useSelector } from 'react-redux'
-import { Link } from 'react-router-dom'
-import jsPDF from 'jspdf'
-import Template1 from '../TemplatesComponents/Template1'
-import Template2 from '../TemplatesComponents/Template2'
-import Template3 from '../TemplatesComponents/Template3'
-import Template4 from '../TemplatesComponents/Template4'
-import Template5 from '../TemplatesComponents/Template5'
-import Template6 from '../TemplatesComponents/Template6'
-import Template7 from '../TemplatesComponents/Template7'
-import Template9 from '../TemplatesComponents/Template9'
-import html2canvas from 'html2canvas'
-import SuccessMessage from './Modal'
-
 
 function MyResume() {
   const selectedTemplate = useSelector(
@@ -64,7 +47,7 @@ function MyResume() {
         }, 100);
       });
   };
-    
+
   return (
     <div style={{ width: '100%', padding: '20px' }}>
       <div className='row mt-2'>
@@ -102,7 +85,15 @@ function MyResume() {
           style={{ display: 'flex', justifyContent: 'center', width: '100%' }}
         >
           <div id='outerdiv'>
-            <div id='divToPrint' style={{ width: '1200px', margin: '0 auto', scale: '1', transformOrigin: 'top left' }}>
+            <div
+              id='divToPrint'
+              style={{
+                width: '1200px',
+                margin: '0 auto',
+                scale: '1',
+                transformOrigin: 'top left',
+              }}
+            >
               {' '}
               {/* Fixed width for PDF */}
               {/* In this div, user selected template is rendered along with the details filled by the user. */}
@@ -124,10 +115,8 @@ function MyResume() {
                 <Template6 />
               ) : selectedTemplate === 'Template 7' ? (
                 <Template7 />
-
               ) : selectedTemplate === 'Template 8' ? (
                 <Template8 />
-              
               ) : selectedTemplate === 'Template 9' ? (
                 <Template9 />
               ) : null}
