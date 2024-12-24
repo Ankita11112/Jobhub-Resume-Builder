@@ -34,7 +34,8 @@ function Template1() {
                         <div>{personalInfo.Email}</div>
                         <div>{personalInfo.Mobile}</div>
                         <div>{`${personalInfo.Address1}, ${personalInfo.Address2} ${personalInfo.City}, ${personalInfo.State}, ${personalInfo.Pin}`}</div>
-                    </div>
+                        {/* </div> */}
+                        </div>
 
                 </div>
                 <hr style={{ height: "5px", backgroundColor: "#00adb5" }} />
