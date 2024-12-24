@@ -101,8 +101,9 @@ function MyResume() {
         <div
           style={{ display: 'flex', justifyContent: 'center', width: '100%' }}
         >
-          <div style={{ width: '100%' }}>
-            <div id='divToPrint' style={{ width: '1200px', margin: '0 auto' }}>
+          <div id='outerdiv'>
+            <div id='divToPrint' style={{ width: '1200px', margin: '0 auto', scale: '1', transformOrigin: 'top left' }}>
+              {' '}
               {/* Fixed width for PDF */}
               {/* In this div, user selected template is rendered along with the details filled by the user. */}
               {selectedTemplate === '' ? (

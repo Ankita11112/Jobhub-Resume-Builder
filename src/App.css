@@ -105,3 +105,65 @@ div.content {
 .image-aspect-ratio{
 aspect-ratio: 0.9;
 }
+
+#divToPrint {
+  width: 1200px; /* Desktop width */
+  margin: 0 auto;
+  transform: scale(1); /* Scale for desktop */
+  transform-origin: top left;
+}
+
+@media screen and (max-width: 1920px) {
+  #divToPrint {
+    transform: scale(1); /* Scale down for mobile */
+    transform-origin: top left;
+  }
+  #outerdiv {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  #divToPrint {
+    transform: scale(0.96); /* Scale down for mobile */
+    transform-origin: top left;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  #divToPrint {
+    transform: scale(0.8); /* Scale down for mobile */
+    transform-origin: top left;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #divToPrint {
+    transform: scale(0.5); /* Scale down for mobile */
+    transform-origin: top left;
+  }
+  #outerdiv {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #divToPrint {
+    transform: scale(0.4); /* Scale down for mobile */
+    transform-origin: top left;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #divToPrint {
+    transform: scale(0.2); /* Scale down for mobile */
+    transform-origin: top left;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #divToPrint {
+    transform: scale(0.2); /* Scale down for mobile */
+    transform-origin: top left;
+  }
+}
