@@ -9,6 +9,7 @@ import Template4 from '../TemplatesComponents/Template4';
 import Template5 from '../TemplatesComponents/Template5';
 import Template6 from '../TemplatesComponents/Template6';
 import Template7 from '../TemplatesComponents/Template7';
+import Template8 from '../TemplatesComponents/Template8';
 import Template9 from '../TemplatesComponents/Template9';
 import html2canvas from 'html2canvas';
 import SuccessMessage from './Modal';
