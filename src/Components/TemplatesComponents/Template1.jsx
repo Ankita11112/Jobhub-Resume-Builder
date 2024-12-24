@@ -22,14 +22,14 @@ function Template1() {
                     ) : (
                         <div className="col-2" style={{ visibility: 'hidden', display: 'none' }} />
                     )}
-                    <div className={dataStore.imageFile ? "col-6 text-left font-weight-bold" : "text-left font-weight-bold"} style={{ fontFamily: "Serif" }}>
+                    <div className={dataStore.imageFile ? "col-6 text-left font-weight-bold" : "text-left font-weight-bold  "} style={{ fontFamily: "Serif", marginLeft:"10px" }}>
                         <div style={{ color: "#00adb5", fontSize: "55px" }}>
                             {personalInfo.firstName + " " + personalInfo.lastName}
                         </div>
                         <h5  className='d-flex ' style={{fontSize:"30px", fontWeight:"bold" }}>{personalInfo.jobTitle}</h5> {/* Updated to use jobTitle directly */}
                     </div>
 
-                    <div  style={{ fontSize: "25px",maxWidth:"min-content", width: "auto", alignContent:"center"}}>
+                    <div  style={{ fontSize: "25px",maxWidth:"min-content", width: "auto", alignContent:"center", marginRight:"10px"}}>
                         <div>{personalInfo.Email}</div>
                         <div>{personalInfo.Mobile}</div>
                         <div>{`${personalInfo.Address1}, ${personalInfo.Address2} ${personalInfo.City}, ${personalInfo.State}, ${personalInfo.Pin}`}</div>
