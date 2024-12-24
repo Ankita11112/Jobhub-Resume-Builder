@@ -9,6 +9,7 @@ import Template4 from '../TemplatesComponents/Template4';
 import Template5 from '../TemplatesComponents/Template5';
 import Template6 from '../TemplatesComponents/Template6';
 import Template7 from '../TemplatesComponents/Template7';
+import Template8 from '../TemplatesComponents/Template8';
 import html2canvas from 'html2canvas';
 import SuccessMessage from './Modal';
 
@@ -85,7 +86,6 @@ function MyResume() {
         >
           <div style={{ width: '100%' }}>
             <div id='divToPrint' style={{ width: '1200px', margin: '0 auto' }}>
-              {' '}
               {/* Fixed width for PDF */}
               {/* In this div, user selected template is rendered along with the details filled by the user. */}
               {selectedTemplate === '' ? (
@@ -106,16 +106,16 @@ function MyResume() {
                 <Template6 />
               ) : selectedTemplate === 'Template 7' ? (
                 <Template7 />
-              ) : (
-                selected
-              )}
+              ) : selectedTemplate === 'Template 8' ? (
+                <Template8 />
+              ) : null}
             </div>
           </div>
         </div>
 
         {/* this SuccessMessage component displays modal popup on the screen with the message 'Your resume has been successfully downloaded'. */}
         <div>
-          <SuccessMessage showModal={showModal} setShow Modal={setShowModal} />
+          <SuccessMessage showModal={showModal} setShowModal={setShowModal} />
         </div>
       </div>
     </div>
