@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import jsPDF from 'jspdf';
@@ -22,21 +22,24 @@ function MyResume() {
 
   const downloadComponentPDF = () => {
     const input = document.getElementById('divToPrint');
-    html2canvas(input, { scrollY: -window.scrollY })
+    const pixelRatio = window.devicePixelRatio || 1; // Get device pixel ratio
+
+    html2canvas(input, {
+      scrollY: -window.scrollY,
+      scale: pixelRatio, // Scale for high resolution
+      width: input.offsetWidth * pixelRatio,  // Adjust width based on pixelRatio
+      height: input.offsetHeight * pixelRatio,  // Adjust height based on pixelRatio
+    })
       .then((canvas) => {
         const imgData = canvas.toDataURL('image/png');
-        const pdf = new jsPDF('p', 'pt', 'a4'); // Use "pt" for points, which is better for PDF dimensions
+        const pdf = new jsPDF('p', 'pt', 'a4'); // "pt" for points
         const pdfWidth = pdf.internal.pageSize.getWidth();
         const pdfHeight = pdf.internal.pageSize.getHeight();
-        const imgWidth = canvas.width;
-        const imgHeight = canvas.height;
-        const ratio = imgWidth / imgHeight;
-
-        // Calculate the height based on the width of the PDF
-        const height = pdfWidth / ratio;
+        const imgWidth = canvas.width / pixelRatio; // Adjust for scaling
+        const imgHeight = (canvas.height / canvas.width) * pdfWidth; // Maintain aspect ratio
 
         // Add image to PDF
-        pdf.addImage(imgData, 'JPEG', 0, 0, pdfWidth, height);
+        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, imgHeight);
         pdf.save('resume.pdf');
       })
       .then(() => {
@@ -51,11 +54,11 @@ function MyResume() {
 
   return (
     <div style={{ width: '100%', padding: '20px' }}>
-      <div className='row mt-2'>
+      <div className="row mt-2">
         <div
           style={{ display: 'flex', justifyContent: 'center', width: '100%' }}
         >
-          <Link to='/detailsfillingpage/keyskills'>
+          <Link to="/detailsfillingpage/keyskills">
             <button
               style={{
                 padding: '10px',
@@ -64,7 +67,6 @@ function MyResume() {
                 color: '#fff',
               }}
             >
-              {' '}
               Go-Back
             </button>
           </Link>
@@ -81,23 +83,20 @@ function MyResume() {
           </button>
         </div>
       </div>
-      <div className='mt-2'>
+      <div className="mt-2">
         <div
           style={{ display: 'flex', justifyContent: 'center', width: '100%' }}
         >
-          <div id='outerdiv'>
+          <div id="outerdiv">
             <div
-              id='divToPrint'
+              id="divToPrint"
               style={{
                 width: '1200px',
                 margin: '0 auto',
-                scale: '1',
                 transformOrigin: 'top left',
               }}
             >
-              {' '}
-              {/* Fixed width for PDF */}
-              {/* In this div, user selected template is rendered along with the details filled by the user. */}
+              {/* Render the selected template */}
               {selectedTemplate === '' ? (
                 <div>
                   <h1>Please select a template!</h1>
@@ -124,8 +123,6 @@ function MyResume() {
             </div>
           </div>
         </div>
-
-        {/* this SuccessMessage component displays modal popup on the screen with the message 'Your resume has been successfully downloaded'. */}
         <div>
           <SuccessMessage showModal={showModal} setShowModal={setShowModal} />
         </div>
