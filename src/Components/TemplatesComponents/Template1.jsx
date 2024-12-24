@@ -6,6 +6,7 @@ function Template1() {
     const dataStore = useSelector(state => state.dataStore);
     const personalInfo = useSelector(state => state.dataStore.personalInfo);
 
+    
     return (
         <div className="px-1" style={{ backgroundColor: "white", height: 'auto', display: "flex", flexDirection: "column" }}>
             <div style={{ flex: 1 }}>
