@@ -36,7 +36,12 @@ export const templateImagesPaths =[
     {
         name:'Template 8',
         imageSource:temp4,
+    },
+    {
+        name:'Template 9',
+        imageSource:temp4,
     }
+
 ]
 
 export const stateNames =['Andhra Pradesh',"Andaman and Nicobar Islands","Arunachal Pradesh","Assam","Bihar","Chandigarh"
