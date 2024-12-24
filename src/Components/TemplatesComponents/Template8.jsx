@@ -83,7 +83,7 @@ function Template8() {
       </div>
       <hr style={{ height: '5px', backgroundColor: '#f0bebe' }} />
 
-      <div className='container' style={{ fontFamily: 'Serif' }}>
+      <div style={{ fontFamily: 'Serif' }}>
         <div className='row'>
           <div className='col-3 text-left  ' style={{ color: '#212121' }}>
             {' '}

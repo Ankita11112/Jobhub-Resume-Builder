@@ -45,7 +45,7 @@ function Template2() {
             <div className="text-justify mx-4">{dataStore.personalInfo.Objective}</div>
             <hr style={{ height: "5px", backgroundColor: "#f0bebe" }} />
 
-            <div className="container" style={{ fontFamily: "Serif", }}>
+            <div style={{ fontFamily: "Serif", }}>
                 <div className="row">
                     <div className="col-3 text-left  " style={{ color: "#de5b7b" }}> <h3> Professional Experience</h3></div>
                     <div className="col-9 text-left" style={{ fontSize: "25px" }}>

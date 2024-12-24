@@ -40,7 +40,7 @@ function Template1() {
                 <div className="text-justify mx-4" style={{ fontSize: "25px" }}>{personalInfo.Objective}</div>
                 <hr style={{ height: "5px", backgroundColor: "#00adb5" }} />
 
-                <div className="container" style={{ fontFamily: "Serif" }}>
+                <div style={{ fontFamily: "Serif" }}>
                     <div className="row">
                         <div className="col-3 text-left" style={{ color: "#00adb5" }}>
                             <h4>Professional Experience</h4>
