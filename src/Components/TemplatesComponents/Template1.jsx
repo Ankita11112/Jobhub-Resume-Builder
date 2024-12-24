@@ -19,7 +19,8 @@ function Template1() {
                                 alt='profile-pic'
                                 style={{ maxHeight: '180px', minHeight: "120px", width: '100px', background: 'grey', padding: 0 }}
                             />
-                        </div>
+                        
+                            </div>
                     ) : (
                         <div className="col-2" style={{ visibility: 'hidden', display: 'none' }} />
                     )}
