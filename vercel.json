@@ -8,7 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/((?!api|static|favicon.ico).*)",
+      "src": "/((?!api|static|favicon.ico|.*\\.(js|css|png|jpg|jpeg|gif|svg|ico|woff|woff2|ttf|eot)).*)",
       "dest": "/index.html"
     },
     {
