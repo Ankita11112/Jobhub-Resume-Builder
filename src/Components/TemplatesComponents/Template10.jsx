@@ -16,7 +16,7 @@ function Template10() {
         maxWidth: '70%',
         margin: 'auto',
       }}
-    >
+    > 
       <div className='row'>
         <div
           className='col-12 d-flex flex-column align-items-center'
