@@ -85,9 +85,6 @@ function Template9() {
                 width: '90%',
                 height: '200px',
                 fontSize: '18px',
-                border: 'none',
-                borderRadius: '5px',
-                backgroundColor: '#f0f0f0', // Match the background color
               }}
             >
               {dataStore.personalInfo.Objective}

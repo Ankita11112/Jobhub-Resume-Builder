@@ -1,64 +1,65 @@
-import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
-import jsPDF from 'jspdf';
-import Template1 from '../TemplatesComponents/Template1';
-import Template2 from '../TemplatesComponents/Template2';
-import Template3 from '../TemplatesComponents/Template3';
-import Template4 from '../TemplatesComponents/Template4';
-import Template5 from '../TemplatesComponents/Template5';
-import Template6 from '../TemplatesComponents/Template6';
-import Template7 from '../TemplatesComponents/Template7';
-import Template8 from '../TemplatesComponents/Template8';
-import Template9 from '../TemplatesComponents/Template9';
-import html2canvas from 'html2canvas';
-import SuccessMessage from './Modal';
+import React, { useState } from 'react'
+import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
+import jsPDF from 'jspdf'
+import Template1 from '../TemplatesComponents/Template1'
+import Template2 from '../TemplatesComponents/Template2'
+import Template3 from '../TemplatesComponents/Template3'
+import Template4 from '../TemplatesComponents/Template4'
+import Template5 from '../TemplatesComponents/Template5'
+import Template6 from '../TemplatesComponents/Template6'
+import Template7 from '../TemplatesComponents/Template7'
+import Template8 from '../TemplatesComponents/Template8'
+import Template9 from '../TemplatesComponents/Template9'
+import Template10 from '../TemplatesComponents/Template10'
+import html2canvas from 'html2canvas'
+import SuccessMessage from './Modal'
 
 function MyResume() {
   const selectedTemplate = useSelector(
     (state) => state.dataStore.selectedTemplate
-  );
-  const [showModal, setShowModal] = useState(false);
+  )
+  const [showModal, setShowModal] = useState(false)
 
   const downloadComponentPDF = () => {
-    const input = document.getElementById('divToPrint');
-    const pixelRatio = window.devicePixelRatio || 1; // Get device pixel ratio
+    const input = document.getElementById('divToPrint')
+    const pixelRatio = window.devicePixelRatio || 1 // Get device pixel ratio
 
     html2canvas(input, {
       scrollY: -window.scrollY,
       scale: pixelRatio, // Scale for high resolution
-      width: input.offsetWidth * pixelRatio,  // Adjust width based on pixelRatio
-      height: input.offsetHeight * pixelRatio,  // Adjust height based on pixelRatio
+      width: input.offsetWidth * pixelRatio, // Adjust width based on pixelRatio
+      height: input.offsetHeight * pixelRatio, // Adjust height based on pixelRatio
     })
       .then((canvas) => {
-        const imgData = canvas.toDataURL('image/png');
-        const pdf = new jsPDF('p', 'pt', 'a4'); // "pt" for points
-        const pdfWidth = pdf.internal.pageSize.getWidth();
-        const pdfHeight = pdf.internal.pageSize.getHeight();
-        const imgWidth = canvas.width / pixelRatio; // Adjust for scaling
-        const imgHeight = (canvas.height / canvas.width) * pdfWidth; // Maintain aspect ratio
+        const imgData = canvas.toDataURL('image/png')
+        const pdf = new jsPDF('p', 'pt', 'a4') // "pt" for points
+        const pdfWidth = pdf.internal.pageSize.getWidth()
+        const pdfHeight = pdf.internal.pageSize.getHeight()
+        const imgWidth = canvas.width / pixelRatio // Adjust for scaling
+        const imgHeight = (canvas.height / canvas.width) * pdfWidth // Maintain aspect ratio
 
         // Add image to PDF
-        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, imgHeight);
-        pdf.save('resume.pdf');
+        pdf.addImage(imgData, 'PNG', 0, 0, pdfWidth, imgHeight)
+        pdf.save('resume.pdf')
       })
       .then(() => {
         setTimeout(() => {
-          setShowModal(true);
+          setShowModal(true)
           setTimeout(() => {
-            setShowModal(false);
-          }, 6000);
-        }, 100);
-      });
-  };
+            setShowModal(false)
+          }, 6000)
+        }, 100)
+      })
+  }
 
   return (
     <div style={{ width: '100%', padding: '20px' }}>
-      <div className="row mt-2">
+      <div className='row mt-2'>
         <div
           style={{ display: 'flex', justifyContent: 'center', width: '100%' }}
         >
-          <Link to="/detailsfillingpage/keyskills">
+          <Link to='/detailsfillingpage/keyskills'>
             <button
               style={{
                 padding: '10px',
@@ -83,13 +84,13 @@ function MyResume() {
           </button>
         </div>
       </div>
-      <div className="mt-2">
+      <div className='mt-2'>
         <div
           style={{ display: 'flex', justifyContent: 'center', width: '100%' }}
         >
-          <div id="outerdiv">
+          <div id='outerdiv'>
             <div
-              id="divToPrint"
+              id='divToPrint'
               style={{
                 width: '1200px',
                 margin: '0 auto',
@@ -119,6 +120,8 @@ function MyResume() {
                 <Template8 />
               ) : selectedTemplate === 'Template 9' ? (
                 <Template9 />
+              ) : selectedTemplate === 'Template 10' ? (
+                <Template10 />
               ) : null}
             </div>
           </div>
@@ -128,7 +131,7 @@ function MyResume() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default MyResume;
+export default MyResume
