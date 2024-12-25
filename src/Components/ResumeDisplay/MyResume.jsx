@@ -28,8 +28,6 @@ function MyResume() {
     html2canvas(input, {
       scrollY: -window.scrollY,
       scale: pixelRatio, // Scale for high resolution
-      width: input.offsetWidth * pixelRatio, // Adjust width based on pixelRatio
-      height: input.offsetHeight * pixelRatio, // Adjust height based on pixelRatio
     })
       .then((canvas) => {
         const imgData = canvas.toDataURL('image/png')
