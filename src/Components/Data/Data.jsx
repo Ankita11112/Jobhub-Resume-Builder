@@ -1,54 +1,60 @@
-import temp1 from './images/temp1.jpg';
-import temp2 from './images/temp2.jpg';
-import temp3 from './images/temp3.jpg';
-import temp4 from './images/temp4.jpg';
+import resume1 from './images/resume1.jpg';
+import resume2 from './images/resume2.jpg';
+import resume3 from './images/resume3.jpg';
+import resume4 from './images/resume4.jpg';
+import resume5 from './images/resume5.jpg';
+import resume6 from './images/resume6.jpg';
+import resume7 from './images/resume7.jpg';
+import resume8 from './images/resume8.jpg';
+import resume9 from './images/resume9.jpg';
+import resume10 from './images/resume10.jpg';
 
 export const templateImagesPaths = [
   //this object contains the paths of the static template images that will be used to display template images in the Home page.
   {
     name: 'Template 1',
-    imageSource: temp1,
+    imageSource: resume1,
   },
   {
     name: 'Template 2',
-    imageSource: temp2,
+    imageSource: resume2,
   },
   {
     name: 'Template 3',
-    imageSource: temp3,
+    imageSource: resume3,
   },
   {
     name: 'Template 4',
-    imageSource: temp4,
+    imageSource: resume4,
   },
   {
     name: 'Template 5',
-    imageSource: temp1,
+    imageSource: resume5,
   },
   {
     name: 'Template 6',
-    imageSource: temp2,
+    imageSource: resume6,
   },
   {
     name: 'Template 7',
-    imageSource: temp3,
+    imageSource: resume7,
   },
   {
     name: 'Template 8',
-    imageSource: temp4,
+    imageSource: resume8,
   },
   {
     name: 'Template 9',
-    imageSource: temp4,
+    imageSource: resume9,
   },
   {
     name: 'Template 10',
-    imageSource: temp4,
+    imageSource: resume10,
   },
 ]
 
 export const stateNames =['Andhra Pradesh',"Andaman and Nicobar Islands","Arunachal Pradesh","Assam","Bihar","Chandigarh"
 ,"Chhattisgarh" ,"Dadar and Nagar Haveli","Daman and Diu","Delhi","Lakshadweep","Puducherry","Goa","Gujarat","Haryana"
 ,"Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya"
-,"Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal"
+,"Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal","USA"
 ]
