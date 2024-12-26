@@ -6,7 +6,7 @@ function Template4() {
     const dataStore = useSelector(state => state.dataStore)
     const personalInfo = useSelector(state => state.dataStore.personalInfo);
   return (
-    <div className='' style={{backgroundColor:"white"}}>
+    <div className='' style={{backgroundColor:"white", height:'1700px'}}>
         <div className='row m-0'>
             <div className='col col-3 d-flex align-items-center pt-5' style={{backgroundColor:"#4b6982", flexDirection:"column"}}>
                 <div className=" media me-5" >

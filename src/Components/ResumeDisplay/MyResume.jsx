@@ -30,12 +30,12 @@ function MyResume() {
     html2canvas(input, {
       scrollY: -window.scrollY,
       scale: pixelRatio, // Scale for high resolution
+
     })
       .then((canvas) => {
         const imgData = canvas.toDataURL('image/png')
         const pdf = new jsPDF('p', 'pt', 'a4') // "pt" for points
         const pdfWidth = pdf.internal.pageSize.getWidth()
-        const pdfHeight = pdf.internal.pageSize.getHeight()
         const imgWidth = canvas.width / pixelRatio // Adjust for scaling
         const imgHeight = (canvas.height / canvas.width) * pdfWidth // Maintain aspect ratio
 
@@ -54,7 +54,7 @@ function MyResume() {
   }
 
   return (
-    <div style={{ width: '100%', padding: '20px' }}>
+    <div style={{ width: '100%', padding: '20px'}}>
       <div className='row mt-2'>
         <div
           style={{ display: 'flex', justifyContent: 'center', width: '100%' }}
@@ -84,14 +84,15 @@ function MyResume() {
           </button>
         </div>
       </div>
-      <div className='mt-2'>
+      <div className='mt-2'style={{ flex: 1 }}>
         <div
-          style={{ display: 'flex', justifyContent: 'center', width: '100%' }}
+          style={{ display: 'flex', justifyContent: 'center', width: '100%', height: '100%' }}
         >
-          <div id='outerdiv'>
+          <div id='outerdiv' style={{ height: '100%' }}>
             <div
               id='divToPrint'
               style={{
+                height: '100%',
                 width: '1200px',
                 margin: '0 auto',
                 transformOrigin: 'top left',

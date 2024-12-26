@@ -10,8 +10,8 @@ function Template10() {
     <div
       className='container'
       style={{
-        fontFamily: 'Verdana, sans-serif',
-
+        fontFamily: 'Verdana, sans-serif'
+, height:'1700px',
         boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
         maxWidth: '70%',
         margin: 'auto',

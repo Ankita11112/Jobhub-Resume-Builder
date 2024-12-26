@@ -8,7 +8,7 @@ function Template1() {
 
     
     return (
-        <div className="px-1" style={{ backgroundColor: "white", height: 'auto', display: "flex", flexDirection: "column" }}>
+        <div className="px-1" style={{ backgroundColor: "white", display: "flex", flexDirection: "column", height:'1700px'}}>
             <div style={{ flex: 1 }}>
                 <div className="d-flex m-0 justify-content-between align-content-center" style={{width:"100%"}}>
                     {dataStore.imageFile ? (

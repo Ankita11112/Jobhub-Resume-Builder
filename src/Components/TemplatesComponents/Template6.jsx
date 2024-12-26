@@ -11,7 +11,8 @@ function Template6() {
       style={{
         backgroundColor: '#ffffff',
         padding: '20px',
-        fontFamily: 'Arial, sans-serif',
+        fontFamily: 'Arial, sans-serif'
+        , height:'1700px'
       }}
     >
       <div style={{ textAlign: 'center' }}>

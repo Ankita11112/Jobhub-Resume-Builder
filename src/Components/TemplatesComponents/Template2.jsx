@@ -7,7 +7,7 @@ function Template2() {
     const dataStore = useSelector(state => state.dataStore)
     const personalInfo = useSelector(state => state.dataStore.personalInfo);
     return (
-        <div className="" style={{ backgroundColor: "#fffeec" }}>
+        <div className="" style={{ backgroundColor: "#fffeec", height:'1700px' }}>
             <div >
                 <div className="d-flex m-0  justify-content-between align-content-center ">
                     {dataStore.imageFile ? (

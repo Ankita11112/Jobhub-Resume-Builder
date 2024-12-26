@@ -7,7 +7,7 @@ function Template12() {
     const personalInfo = useSelector(state => state.dataStore.personalInfo);
 
     return (
-        <div style={{ backgroundColor: "#f3e5f5", padding: "40px", fontFamily: "Arial, sans-serif", color: "#333" }}>
+        <div style={{ backgroundColor: "#f3e5f5", padding: "40px", fontFamily: "Arial, sans-serif", color: "#333", height:'1700px' }}>
             <div style={{ margin: "0 auto"}}>
                 {/* Header Section */}
                 <div style={{ backgroundColor: "#6a1b9a", color: "#fff", padding: "20px", textAlign: "center" ,borderRadius:"10px"}}>
