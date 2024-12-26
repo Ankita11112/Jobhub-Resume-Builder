@@ -12,6 +12,8 @@ import Template7 from '../TemplatesComponents/Template7'
 import Template8 from '../TemplatesComponents/Template8'
 import Template9 from '../TemplatesComponents/Template9'
 import Template10 from '../TemplatesComponents/Template10'
+import Template11 from '../TemplatesComponents/Template11'
+import Template12 from '../TemplatesComponents/Template12'
 import html2canvas from 'html2canvas'
 import SuccessMessage from './Modal'
 
@@ -120,6 +122,10 @@ function MyResume() {
                 <Template9 />
               ) : selectedTemplate === 'Template 10' ? (
                 <Template10 />
+              ) : selectedTemplate === 'Template 11' ? (
+                <Template11 />
+              ) : selectedTemplate === 'Template 12' ? (
+                <Template12 />
               ) : null}
             </div>
           </div>
