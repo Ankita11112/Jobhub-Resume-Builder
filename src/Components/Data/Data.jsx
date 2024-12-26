@@ -8,6 +8,9 @@ import resume7 from './images/resume7.jpg';
 import resume8 from './images/resume8.jpg';
 import resume9 from './images/resume9.jpg';
 import resume10 from './images/resume10.jpg';
+import resume11 from './images/resume11.jpg';
+import resume12 from './images/resume12.jpg';
+
 
 export const templateImagesPaths = [
   //this object contains the paths of the static template images that will be used to display template images in the Home page.
@@ -53,11 +56,11 @@ export const templateImagesPaths = [
   },
   {
     name: 'Template 11',
-    imageSource: resume10,
+    imageSource: resume11,
   },
   {
     name: 'Template 12',
-    imageSource: resume10,
+    imageSource: resume12,
   }
 ]
 

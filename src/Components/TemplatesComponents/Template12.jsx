@@ -17,14 +17,14 @@ function Template12() {
                             alt='profile-pic'
                             style={{ borderRadius: "50%", width: "100px", height: "100px", marginBottom: "10px" }}
                         />
-                    )}
+                    )} 
                     <h1 style={{ margin: "0", fontSize: "28px", color: "#4a4a4a" }}>{`${personalInfo.firstName} ${personalInfo.lastName}`}</h1>
                     <h3 style={{ margin: "0", fontSize: "20px", color: "#777" }}>{personalInfo.jobTitle}</h3>
                 </div>
 
                 {/* Contact Information */}
                 <div style={{ marginBottom: "20px" }}>
-                    <h4 style={{ borderBottom: "2px solid #4a4a4a", paddingBottom: "5px" }}>Contact Information</h4>
+                    <h4 style={{  paddingBottom: "5px" }}>Contact Information</h4>
                     <p><strong>Email:</strong> {dataStore.personalInfo.Email}</p>
                     <p><strong>Phone:</strong> {dataStore.personalInfo.Mobile}</p>
                     <p><strong>Address:</strong> {`${dataStore.personalInfo.Address1}, ${dataStore.personalInfo.Address2}, ${dataStore.personalInfo.City}, ${dataStore.personalInfo.State}, ${dataStore.personalInfo.Pin}`}</p>

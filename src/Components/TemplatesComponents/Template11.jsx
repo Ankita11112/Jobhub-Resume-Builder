@@ -8,9 +8,9 @@ function Template12() {
 
     return (
         <div style={{ backgroundColor: "#f3e5f5", padding: "40px", fontFamily: "Arial, sans-serif", color: "#333" }}>
-            <div style={{ maxWidth: "800px", margin: "0 auto", border: "1px solid #ccc", borderRadius: "8px", overflow: "hidden" }}>
+            <div style={{ margin: "0 auto"}}>
                 {/* Header Section */}
-                <div style={{ backgroundColor: "#6a1b9a", color: "#fff", padding: "20px", textAlign: "center" }}>
+                <div style={{ backgroundColor: "#6a1b9a", color: "#fff", padding: "20px", textAlign: "center" ,borderRadius:"10px"}}>
                     <h1 style={{ margin: "0" }}>{`${personalInfo.firstName} ${personalInfo.lastName}`}</h1>
                     <h3 style={{ margin: "0" }}>{personalInfo.jobTitle}</h3>
                 </div>
