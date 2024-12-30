@@ -17,6 +17,7 @@ const MissionVisionSection = () => {
               height: 'auto',
               borderRadius: 2,
               objectFit: 'cover',
+              marginBottom: '-65px',
               display:{xs:'none' , lg:'flex'}
             }}
           />
