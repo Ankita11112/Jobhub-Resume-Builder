@@ -6,7 +6,7 @@ import AOS from 'aos';
 import { useEffect } from 'react';
 import 'aos/dist/aos.css';
 
-const HeaderPage = ({ backgroundImage, headerText, subText, buttonTitle1, buttonTitle2, onButtonClick1, onButtonClick2, imgSrc, button2, style }) => {
+const HeaderPage = ({ backgroundImage, headerText, subText, buttonTitle1, buttonTitle2, onButtonClick1, onButtonClick2, imgSrc, button2, style, buttonAction2 }) => {
 
   useEffect(() => {
     AOS.init();
@@ -82,7 +82,7 @@ const HeaderPage = ({ backgroundImage, headerText, subText, buttonTitle1, button
               <div data-aos="zoom-in" >
                 <ButtonComponent
                   title={buttonTitle1}
-                  onClick={onButtonClick1}
+                  onClick={buttonAction2}
                   sx={{
                     background: "green",
                     border: 0,
