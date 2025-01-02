@@ -1,20 +1,5 @@
 {
-  "routes": [
-    {
-     "src": "/",
-    "dest": "/"
-  },
-  {
-    "src":"/detailsfillingpage",
-    "dest":"/"
-  },
-   {
-    "src":"/myresume",
-    "dest":"/"
-  },
-  {
-    "src":"/about",
-    "dest":"/"
-  }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
