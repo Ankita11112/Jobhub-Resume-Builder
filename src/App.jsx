@@ -16,16 +16,13 @@ function App() {
 
       <div>
         <Routes>
-          <Route exact path='/*' element={<Home />}></Route>
-          <Route
-            path='/detailsfillingpage/*'
-            element={<DetailsFillingPage />}
-          ></Route>
-          <Route path='/myresume' element={<MyResume />}></Route>
-          <Route exact path='/about' element={<AboutUs />}></Route>
-          <Route path='*' element={<Navigate to='/about' />}></Route>
-          
+          <Route path="/" element={<Home />} />
+          <Route path="/detailsfillingpage/*" element={<DetailsFillingPage />} />
+          <Route path="/myresume" element={<MyResume />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="*" element={<Navigate to="/about" />} />
         </Routes>
+
         <Footer />
       </div>
     </div>
