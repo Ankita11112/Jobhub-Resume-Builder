@@ -8,12 +8,14 @@ function NavBar() {
   return (
     <div style={{ backgroundColor: '#bfe9db', color: '#07588a', zIndex: 10 }}>
       <nav className='navbar navbar-expand-xl navbar-light p-0 m-0 '>
-        <div className='container-fluid w-75'>
+        <div style={{
+          height: '100px',
+        }} className='container-fluid w-100 '>
           <div
-            className='navbar-brand d-flex align-items-center'
+            className='navbar-brand d-flex justify-conent-space-between'
             style={{ color: '#07588a', fontSize: '30px', fontWeight: '600' }}
           >
-            <div className='me-3 mb-2 '>
+            <div className='me-3  '>
               <a href='https://www.jobhub.world/'>
                 <img src={Logo} alt='' width={120} />
               </a>
@@ -48,13 +50,10 @@ function NavBar() {
                     fontSize: '20px',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.color = '#ff5733';
-                    e.currentTarget.style.border = '2px solid rgb(0, 0, 0)';
+                    e.currentTarget.style.color = 'green';
+                    // e.currentTarget.style.border = '2px solid rgb(0, 0, 0)';
                   }} // Change color on hover
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.color = '#07588a';
-                    e.currentTarget.style.border = '2px solid transparent';
-                  }}
+              
                 >
                   Resume Templates
                 </Link>
@@ -70,13 +69,10 @@ function NavBar() {
                     fontSize: '20px',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.color = '#ff5733';
-                    e.currentTarget.style.border = '2px solid rgb(0, 0, 0)';
+                    e.currentTarget.style.color = 'green';
+                    // e.currentTarget.style.border = '2px solid rgb(0, 0, 0)';
                   }} // Change color on hover
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.color = '#07588a';
-                    e.currentTarget.style.border = '2px solid transparent';
-                  }}
+                 
                 >
                   My Resume
                 </Link>
@@ -92,13 +88,10 @@ function NavBar() {
                     fontSize: '20px',
                   }}
                   onMouseEnter={(e) => {
-                    e.currentTarget.style.color = '#ff5733';
-                    e.currentTarget.style.border = '2px solid rgb(0, 0, 0)';
+                    e.currentTarget.style.color = 'green';
+                    // e.currentTarget.style.border = '2px solid rgb(0, 0, 0)';
                   }} // Change color on hover
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.color = '#07588a';
-                    e.currentTarget.style.border = '2px solid transparent';
-                  }}
+                
                 >
                   About Us
                 </Link>
